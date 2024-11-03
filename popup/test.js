@@ -2,8 +2,10 @@ const update = document.querySelector('#update');
 
 const manifestVersion = chrome.runtime.getManifest().version;
 
+console.log(manifestVersion);
+
 const url =
-    'https://raw.githubusercontent.com/Lumm1t/anti-testportal/master/public/manifest.json';
+    'https://raw.githubusercontent.com/realdarek/anti-testportal-d/master/manifest.json';
 
 fetch(url)
     .then(async (response) => response.json())
